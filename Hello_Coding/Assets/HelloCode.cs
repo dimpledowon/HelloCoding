@@ -6,18 +6,18 @@ public class HelloCode : MonoBehaviour
 {
     void Start()
     {
-        float distance = GetDistance(2, 2, 5, 6);
-        Debug.Log("(2,2)에서 (5,6)까지의 거리 : " + distance);
-    }
+        int[] studenets = new int[5];
 
-    float GetDistance(float x1, float y1, float x2, float y2)
-    {
-        float width = x2 - x1;
-        float height = y2 - y1;
+        studenets[0] = 100;
+        studenets[1] = 90;
+        studenets[2] = 80;
+        studenets[3] = 70;
+        studenets[4] = 60;
 
-        float distance = width * width + height * height;
-        distance = Mathf.Sqrt(distance);
-
-        return distance;
+        Debug.Log("0 번 학생의 점수: " + studenets[0]);
+        Debug.Log("1 번 학생의 점수: " + studenets[1]);
+        Debug.Log("2 번 학생의 점수: " + studenets[2]);
+        Debug.Log("3 번 학생의 점수: " + studenets[3]);
+        Debug.Log("4 번 학생의 점수: " + studenets[4]);
     }
 }
