@@ -14,10 +14,15 @@ public class HelloCode : MonoBehaviour
         studenets[3] = 70;
         studenets[4] = 60;
 
-        Debug.Log("0 번 학생의 점수: " + studenets[0]);
+        /*Debug.Log("0 번 학생의 점수: " + studenets[0]);
         Debug.Log("1 번 학생의 점수: " + studenets[1]);
         Debug.Log("2 번 학생의 점수: " + studenets[2]);
         Debug.Log("3 번 학생의 점수: " + studenets[3]);
-        Debug.Log("4 번 학생의 점수: " + studenets[4]);
+        Debug.Log("4 번 학생의 점수: " + studenets[4]);*/
+
+        for (int i = 0; i < studenets.Length;i++)
+        {
+            Debug.Log((i + 1) + " 번 학생의 점수: " + studenets[i]);
+        }
     }
 }
